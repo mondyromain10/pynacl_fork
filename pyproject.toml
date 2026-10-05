@@ -55,6 +55,7 @@ docs = [
 "Homepage" = "https://github.com/pyca/pynacl"
 "Bug Tracker" = "https://github.com/pyca/pynacl/issues"
 "Documentation" = "https://pynacl.readthedocs.io"
+"Changelog" = "https://github.com/pyca/pynacl/blob/main/CHANGELOG.rst"
 
 [tool.ruff]
 line-length = 79

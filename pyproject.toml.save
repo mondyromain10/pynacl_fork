@@ -1,0 +1,294 @@
+Passer directement au contenu principalAide sur l'accessibilité
+￼
+￼
+Mode IA
+Tous
+Vidéos
+Images
+Vidéos courtes
+Actualités
+Livres
+Plus
+Outils
+Résultats de recherche
+Aperçu IA
+Pour voir un commit en particulier, utilisez la commande git show <HASH>. ￼
+￼
+Stéphane ROBERT
+Commandes utiles pour afficher un commit
+Afficher les détails et modifications : git show <hash_du_commit> (par exemple git show a1b2c3d) permet de voir l'auteur, la date, le message et le contenu exact des lignes modifiées.
+Rechercher le hash du commit : git log --oneline liste les commits de façon compacte avec leurs identifiants abrégés.
+Limiter l'affichage à un seul commit dans le log : git show -s --pretty=fuller <hash> pour voir uniquement les métadonnées sans le code. ￼
+￼
+GitHub Docs
+ +2
+Si vous cherchez un commit sans connaître son hash, voulez-vous savoir comment le retrouver par son message (git log --grep) ou par un morceau de code qu'il contient (git log -S) ?
+Les réponses de l'IA peuvent contenir des erreurs. En savoir plus
+￼
+￼
+￼
+￼
+Afficher plus
+Résultats Web
+Visualiser l'historique des validations
+￼
+Git
+https://git-scm.com › book › Les-bases-de-Git-Visualise...
+Visualiser l'historique des validations ; --pretty. Affiche les commits dans un format alternatif. Les formats incluent oneline , short , full , fuller , et ...
+Termes manquants : particulier ‎| Afficher les résultats avec : particulier
+Comment puis-je facilement vérifier un commit à partir du ...
+￼
+Reddit · r/git
+Plus de 20 commentaires · il y a 1 an
+Ça peut sembler un peu bête, mais une chose que je n'ai pas encore réussi à faire simplement, c'est de vérifier un commit aléatoire basé sur ce ...
+Autres questions
+Comment puis-je voir le contenu d'un commit git ?
+Comment puis-je récupérer un commit git ?
+Comment dit-on "git commit" en français ?
+C'est quoi un cherry pick ?
+Résultats Web
+Afficher les détails des commits depuis votre chronologie
+￼
+GitHub Docs
+https://docs.github.com › how-tos › contribution-settings
+Pour vérifier si la date d'auteur diffère de la date du commit, utilisez la commande git show : · Ouvrez l'URL modifiée dans votre navigateur pour afficher les ...
+Git Log : lister et retrouver ses commits
+￼
+IONOS France
+https://www.ionos.fr › ... › Développement web
+9 nov. 2022 — Git Log permet d'afficher et de filtrer l'ensemble des commits d'un projet. ... Git Diff : afficher les modifications dans Git. La commande Git ...
+Consulter l'historique Git avec git log
+￼
+Stéphane ROBERT
+https://blog.stephane-robert.info › ... › Version › Git
+28 mars 2026 — Maîtrisez git log sous toutes ses formes : filtrer par auteur, date, fichier, formater la sortie et chercher dans les commits.
+Premiers commits, Tutoriel video git
+￼
+Grafikart
+https://grafikart.fr · 7 mars 2015
+￼
+Une particularité de git est son système de staging qui permet de sélectionner les fichiers à suivre lors du prochain commit. Vous pouvez imaginer ça comme une ...
+Comment vérifier si un commit Git existe
+￼
+LabEx
+https://labex.io › tutorials › git-how-to-check-if-a-git-co...
+Apprenez à vérifier si un commit Git existe en utilisant `git show` et `git log --all`. Explorez l'affichage des détails des commits et la gestion des hashs ...
+Comment puis-je voir tous les commits qui ont changé une ...
+￼
+Reddit · r/git
+2 commentaires · il y a 2 ans
+git log -- FILE filtre le journal pour montrer seulement les commits qui changent ce fichier (tu peux combiner ça aussi avec -p ). Pour réduire ...
+Vidéos
+How to see commit details with git show?
+YouTube · Gickel OKABI | AntalaSchool
+Il y a 1 mois
+YouTube · Gickel OKABI | AntalaSchool
+￼
+1:13
+05 - Voir ses commit git
+YouTube · Emmanuel Ravrat
+30 nov. 2020
+YouTube · Emmanuel Ravrat
+￼
+12:28
+9 moments clés dans cette vidéo
+GITFormation :002 Voir l'historique des commits
+YouTube · Le Monde Du Test
+6 sept. 2024
+YouTube · Le Monde Du Test
+￼
+2:04
+Voir plus
+Recherches associées
+Git historique commit
+Git voir contenu commit
+Voir le contenu d un commit
+Git rebase
+Git afficher les branches
+Commande git commit
+Git push
+Git annuler dernier commit
+Navigation par pages
+1	
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Suivant
+Liens de pied de page
+Les résultats sont personnalisés
+-
+Essayer sans personnalisation
+France
+33400, Talence - D'après votre adresse IP
+ - Mettre à jour ma position
+Aide
+Envoyer des commentaires
+Confidentialité
+Conditions
+Info consommateurs
+Signaler un contenu inapproprié[build-system]
+# Must be kept in sync with `dependencies` below
+requires = [
+    "setuptools>=61.0.0,!=74.0.0",
+    "wheel,
+    "cffi>=1.4.1; platform_python_implementation != 'PyPy' and python_version < '3.9'",
+    "cffi>=2.0.0; platform_python_implementation != 'PyPy' and python_version >= '3.9'",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["readme"]
+
+name = "PyNaCl"
+# Must be kept in sync with `src/nacl/__init__.py`
+version = "1.6.2"
+authors = [
+    {name = "The PyNaCl developers", email = "cryptography-dev@python.org"}
+]
+description = "Python binding to the Networking and Cryptography (NaCl) library"
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: Free Threading :: 3 - Stable",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "cffi>=1.4.1; platform_python_implementation != 'PyPy' and python_version < '3.9'",
+    "cffi>=2.0.0; platform_python_implementation != 'PyPy' and python_version >= '3.9'",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest >=7.4.0",
+    "pytest-cov >=2.10.1",
+    "pytest-xdist >=3.5.0",
+    "hypothesis>=3.27.0",
+]
+docs = [
+    "sphinx<7",
+    "sphinx_rtd_theme"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pyca/pynacl"
+"Bug Tracker" = "https://github.com/pyca/pynacl/issues"
+"Documentation" = "https://pynacl.readthedocs.io"
+
+[tool.ruff]
+line-length = 79
+exclude = ["src/libsodium"]
+
+
+[tool.mypy]
+show_error_codes = true
+warn_redundant_casts = true
+warn_incomplete_stub = true
+
+disallow_any_unimported = true
+disallow_any_expr = true  # overridden to `false` inside `nacl.bindings`
+disallow_any_decorated = true
+disallow_any_explicit = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+
+no_implicit_optional = true
+
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = true  # overridden to `false` inside `nacl.bindings`
+warn_unreachable = true
+
+no_implicit_reexport = true
+strict_equality = true
+
+files = [
+    "src/nacl",
+    "tests",
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "nacl._sodium",
+]
+ignore_missing_imports = true
+
+# Within `nacl.bindings`, all of the C functions exposed via cffi in
+# nacl._sodium return `Any` as far as mypy is concerned. It's not worth it to
+# stub the C functions or cast() their uses. But this means there are more
+# `Any`s floating around. So the more restrictive any checks we'd like to use
+# should only be turned on outside of `bindings`.
+
+[[tool.mypy.overrides]]
+module = [
+    "nacl.bindings.*",
+]
+disallow_any_expr = false
+warn_return_any = false
+
+# Loosen some of the checks within the tests. Note that `tests.utils` passes with the
+# strict checks on, but it's included here in the list of modules with looser checks
+# to keep mypy's config simple(r).
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.*",
+]
+# Some library helpers types' involve `Any`, in particular `pytest.mark.parameterize`
+# and `hypothesis.strategies.sampledfrom`.
+disallow_any_expr = false
+disallow_any_decorated = false
+
+# It's not useful to annotate each test function as `-> None`.
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+source = ["nacl", "tests/"]
+
+[tool.coverage.paths]
+source = [
+    "src/nacl",
+    "*.nox/*/lib*/python*/site-packages/nacl",
+    "*.nox/*/lib*/pypy*/site-packages/nacl",
+    "*.nox\\*\\Lib\\site-packages\\nacl",
+]
+tests = ["tests/", "*tests\\"]
+
+[tool.coverage.report]
+exclude_also = [
+    "@abc.abstractmethod",
+    "@typing.overload",
+    "if typing.TYPE_CHECKING",
+]
+
+[tool.coverage.html]
+show_contexts = true
+
+[tool.pytest.ini_options]
+addopts = "-r s --capture=no"
+console_output_style = "progress-even-when-capture-no"
+
